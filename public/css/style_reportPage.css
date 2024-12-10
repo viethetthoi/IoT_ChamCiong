@@ -90,6 +90,7 @@ body {
     color: #2d3748;
 }
 
+
 /* Biểu đồ */
 .chart-container {
     background-color: #fff;
@@ -177,4 +178,20 @@ body {
 
 .calendar-container button:hover {
     background-color: #0056b3;
+}
+
+/* Nút submit */
+#filter-btn {
+    background-color: #4CAF50; /* Màu nền */
+    color: white;             /* Màu chữ */
+    padding: 10px 20px;       /* Khoảng cách trong */
+    font-size: 16px;          /* Kích thước chữ */
+    border: none;             /* Loại bỏ viền */
+    border-radius: 5px;       /* Góc bo tròn */
+    cursor: pointer;          /* Con trỏ dạng bấm */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+#filter-btn:hover {
+    background-color: #45a049; /* Màu nền khi hover */
 }

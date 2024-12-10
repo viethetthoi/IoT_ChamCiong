@@ -27,7 +27,7 @@
             <div class="calendar-container">
                 <label for="report-date">Ngày:</label>
                 <input type="date" id="report-date" name='report-date'>
-                <input type="submit" value="Xem Báo Cáo" id="filter-btn">
+                <input type="submit" value="Xem Báo Cáo" id="filter-btn" >
             </div>
             {!! Form::close() !!}
         </section>

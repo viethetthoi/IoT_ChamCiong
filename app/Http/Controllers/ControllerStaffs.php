@@ -65,14 +65,14 @@ class ControllerStaffs extends Controller
             $imageData = base64_decode($base64Image);
         
             if ($imageData !== false) {
-                $outputDir = __DIR__ . "/public/img"; 
+                $outputDir = "C:/xampp/htdocs/IOT_WEB/public/img"; 
                 if (!is_dir($outputDir)) {
                     mkdir($outputDir, 0777, true); 
                 }
                 $randomFileName = "image_" . uniqid() . ".png";
                 $outputFile = $outputDir . "/" . $randomFileName;
                 file_put_contents($outputFile, $imageData);
-                $relativePath = str_replace(__DIR__ . '/', '', $outputFile);
+                $relativePath = str_replace("C:/xampp/htdocs/IOT_WEB/", '', $outputFile);
                 $relativePath = str_replace('\\', '/', $relativePath);
                 $image = $relativePath; 
             }

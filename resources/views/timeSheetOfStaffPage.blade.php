@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Báo Cáo</title>
-    <link rel="stylesheet" href="\IOT_WEB\public\css\style_reportPage.css">
+    <link rel="stylesheet" href="/IOT_WEB/public/css/style_reportPage.css">
     
 </head>
 <body>
@@ -26,7 +26,7 @@
             <div class="calendar-container">
                 <label for="report-date">Ngày:</label>
                 <input type="date" id="report-date" name='report-date'>
-                <input type="submit" value="Xem Báo Cáo" id="filter-btn">
+                <input type="submit" value="Xem Báo Cáo" id="filter-btn" class="edit-btn">
             </div>
             {!! Form::close() !!}
         </section>
